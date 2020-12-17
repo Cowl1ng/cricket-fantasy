@@ -1,0 +1,24 @@
+Cricket fantasy & stats site for the BBL + IPL (hopefully)
+
+MVP
+[ ] Displays stats as well as fantasy scoring for 1 game
+[ ] Display stats & fantasy points scored in the BBL for 1 player
+[ ] Display stats in the BBL for 1 team
+[ ] Display fantasy points scored in the BBL for 1 gameweek
+[ ] Sending the fantasy points scored by each player in a game to Tims google sheet automatically when game is live
+
+Things that are needed to do to complete MVP
+Backend
+[ ] Takes in the data from sportsmonk API & store it in database
+[ ] Calculate fantasy scoring
+[ ] Give player/team & game stats to the front end on request
+
+Frontend
+[ ] Navbar at top - Search bar for teams or players
+[ ] Homepage - Show fixtures & results - Shows list of starred players and thier stats in most recent game
+[ ] Game Page
+Upcoming - Teams with record of last 3 games - Time of start - Show top 2 batsman, 2 bowlers & keeper
+During & after - Copy espncricinfo scorecard with star next to player to follow them - Fantasy tab showing points scored per player & how they scored them
+[ ] Player Page - Showing stats & fantasy points - Icon to click to star a player
+[ ] Team Page - Upcoming fixtures - Lastest results - Top batsmen, bowlers & wicketkeeper
+[ ] Table page - Displaying BBL table - Top scorers in a few categories

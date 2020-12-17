@@ -1,0 +1,38 @@
+Routes needed
+/api in front of all routes for MY API
+/sportsmonk in front of all routes for sportsmonk API
+
+To front end from back-end (/api)
+Leagues
+  - Get 1 season
+  - Get selection of seasons 
+Teams
+  - Get 1 team
+  - Get selection of teams [league, season, etc]
+Fixtures
+  - Get upcoming & recent fixtures
+  - Get 1 fixture
+  Authorised
+  - Update fixtures [fantasy gameweeks, etc]
+Players
+  - Get stats for 1 player
+  - Get stats for selection of players [team, starred, etc]
+  - 
+  Authorised
+  - Update players (if API has mistakes)
+
+Fantasy
+  - Get fixtures for each gameweek
+  Authorised
+  - Create gameweeks
+  - Update gameweeks with relevant fixtures
+  - Delete gameweeks
+
+
+To back-end from API (/sportsmonk) all protected routes
+All need to be able to get data on either 1 or a selection of relevant thing  (filter[element])
+Leagues
+Seasons
+Teams
+Fixtures
+Players

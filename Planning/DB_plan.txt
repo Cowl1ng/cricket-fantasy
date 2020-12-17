@@ -1,0 +1,193 @@
+Clusters
+
+- League
+- Season
+- Team
+- Player
+- Games
+- Fantasy Leagues
+- Fantasy Teams
+- Fantasy gameweeks
+
+
+- League (only be 1 for now but still needed)
+  - Name
+  - ID 
+  - Code
+  - Country ID
+  - Season IDs
+
+- Season
+  - Name
+  - Code
+  - Fixtures
+
+- Team
+  - Name
+  - ID
+  - Code
+  - Squad
+    - Player ID
+    - Position
+
+- Games
+  - ID
+  - League ID
+  - Season ID
+  - Round
+  - Local team ID
+  - Visitor team ID
+  - Start Time
+  - Live (will game give livescores or not)
+  - Status
+  - Venue ID
+  - Toss winning team ID
+  - Elected (bat or bowl)
+  - Winning team ID
+  - Draw or no result
+  - Man of the match ID
+  - Super Over
+  - Batting
+    - Sort (position)
+    - Player ID
+    - Team ID
+    - Score
+    - No. of 4s
+    - No. of 6s
+    - Fall of wicket score
+    - Fall of wicket balls
+    - Strike rate (might be worth calculating manually)
+    - Bowling player ID (bowler when out)
+    - Catch or stump player ID
+    
+
+  - Bowling
+    - Sort (position)
+    - Player ID
+    - Team ID
+    - Overs
+    - Maidens
+    - Runs
+    - Wickets
+    - Widess
+    - Noballs
+    - Economy (rate in API)
+    NOT IN API
+    - Dot balls
+  
+  - Fielding
+    NOT ON API
+    - Catches
+    - Stumpings
+    - Thrown out
+    - LBWs
+  
+  - Fantasy points
+    - PlayerID
+    - TeamID
+    - Batting
+      - Player ID
+      - Team ID
+      - POINTS & HOW THEY WERE SCORED
+    - Bowling
+      - Player ID
+      - Team ID
+      - POINTS & HOW THEY WERE SCORED
+    - Fielding
+      - Player ID
+      - Team ID
+      - POINTS & HOW THEY WERE SCORED
+      
+- Player
+  - ID
+  - CountryID
+  - Name (first, last & full)
+  - Image URI
+  - DOB
+  - Gender
+  - Batting Style
+  - Bowling Style
+  - Position
+  - Career stats
+    - Season ID
+    - Bowling
+      - Matches
+      - Overs
+      - Innings
+      - Runs per wicket
+      - Economy (runs per over)
+      - Maidens
+      - Runs allowed
+      - Wickets taken
+      - Wides
+      - Noballs
+      - Strike rate (overs per wicket)
+      - 4 wicket hauls
+      - 5 wicket hauls
+      - 10 wicket hauls
+      - Rate (Economy * 100)
+      NOT ON API
+      - Dot balls
+      - Wickets
+        - Number taken (On API)
+        - LBWs
+        - Bowled
+        - Catches
+    
+    Batting
+      - Matches
+      - Innings
+      - Runs scored
+      - Not outs
+      - Highest innings score
+      - Strike rate (Score per 100 balls)
+      - Balls faced
+      - Average (per innings)
+      - No. of 4s
+      - No. of 6s
+      - Hundreds
+      - Fifties
+      NOT ON API
+      - 
+    
+    Fielding
+    NOT ON API
+    - Catches
+    - Stumpings
+    - Thrown out
+    - LBWs
+
+
+
+- Fantasy Leagues
+  - League ID
+  - League type (H2H or total points)
+  - Season
+    - Name
+    - ID
+    - Fantasy teams
+      - Team ID
+      - Team Owner
+    - Fixture list (H2H)
+    - Score table
+      - H2H
+      - Total points scored
+  - Fantasy team ID
+  - 
+
+
+- Fantasy Teams
+  - Squad
+    - Current
+    - All previous (get every day & change current if needed)
+
+
+- Fantasy gameweeks
+  - Fantasy League ID (NOT FROM API, OUR ID)
+  - Fantasy Season ID (NOT FROM API, OUR ID)
+  - League ID
+  - Season ID
+  - Game fixtures
+  - Fantasy fixtures
+  - Start time of game week (Hour before first match starts)
+
