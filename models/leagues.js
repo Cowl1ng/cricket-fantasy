@@ -8,8 +8,11 @@ const LeagueSchema = new mongoose.Schema({
   id: {
     type: Number,
   },
-  season_id: {
+  current_season_id:{
     type: Number,
+  },
+  season_ids: {
+    type: Array,
   },
   country_id: {
     type: Number,
@@ -17,7 +20,7 @@ const LeagueSchema = new mongoose.Schema({
   code: {
     type: String,
   },
-  image: {
+  image_path: {
     type: String
   },
   date: {
