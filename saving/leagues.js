@@ -24,9 +24,9 @@ router.get('/', async (req, res) => {
   console.log(`Response: ${JSON.stringify(response.data.data)}`)
   console.log(`db: ${JSON.stringify(leagues)}`)
 
-  // for (const league of leagues) {
-  //   const document = 
-  // }
+  for (const league of leagues) {
+    const document = 
+  }
   
   try {
     const res = League.updateMany({id: leagues.id}, {$set: leagues}, {upssert: true}, (error, docs) => {
